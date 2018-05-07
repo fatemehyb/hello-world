@@ -1,0 +1,14 @@
+def IsUnique(String):
+ for i in range(1,String.length()):
+  for j in range(2,String.length()):
+   if String[i]=string[j]:
+     count[i]=count[i]+1
+     if count[i]>=1:
+      return 0
+   
+  
+  return 1
+
+Answer=IsUnique(1233)
+print(Answer)
+     
