@@ -1,0 +1,22 @@
+import numpy as np
+def permutation(String1,String2):
+    if String1.__len__()!=String2.__len__():
+        return False
+    j=0
+    Reverse=np.zeros(String1.__len__())
+    for i in range(String1.__len__()-1,-1,-1):
+        if String2[j]==String1[i]:
+           j=j+1
+        else:
+            return False
+    return True
+
+
+
+
+
+
+
+Answer = permutation('god','God')
+print(Answer)
+
